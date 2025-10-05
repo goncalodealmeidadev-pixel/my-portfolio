@@ -17,8 +17,6 @@ function App() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
-  const API_KEY = 'demo' // Using demo mode for portfolio
-
   const getWeather = async (searchCity?: string) => {
     const cityToSearch = searchCity || city
     if (!cityToSearch.trim()) {
