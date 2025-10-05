@@ -4,21 +4,21 @@ function App() {
   const projects = [
     {
       name: "Gym/Workout Tracking App",
-      description: "A comprehensive workout tracking application featuring exercise logging, set/rep/weight tracking, and workout history with local data persistence.",
+      description: "Track your workouts, monitor progress, and achieve your fitness goals with an intuitive interface.",
       techStack: "React, TypeScript, Local Storage",
-      demoLink: "http://localhost:5174" // Temporary local link
+      demoLink: "https://goncalo-dealmeida-gym-tracking.netlify.app/"
     },
     {
       name: "Gym Landing Page",
-      description: "Professional marketing website for fitness centers featuring hero sections, class schedules, pricing tiers, and responsive design.",
+      description: "Modern, responsive landing page for gyms and fitness centers to attract new members.",
       techStack: "React, CSS, Responsive Design",
-      demoLink: "http://localhost:5175" // Temporary local link
+      demoLink: "https://goncalo-dealmeida-gym-landing.netlify.app"
     },
     {
       name: "Weather App",
-      description: "Weather application with city search functionality, real-time data display, and support for API integration.",
-      techStack: "React, Weather API, TypeScript",
-      demoLink: "http://localhost:5176" // Temporary local link
+      description: "Real-time weather information with forecasts and location-based weather updates.",
+      techStack: "React, Weather API, Geolocation",
+      demoLink: "https://goncalo-dealmeida-weather-app.netlify.app"
     }
   ]
 
