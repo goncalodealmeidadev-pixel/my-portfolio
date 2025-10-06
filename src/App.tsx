@@ -14,19 +14,22 @@ function App() {
       name: "Gym/Workout Tracking App",
       description: "Track your workouts, monitor progress, and achieve your fitness goals with an intuitive interface.",
       techStack: ["React", "TypeScript", "Local Storage"],
-      demoLink: "https://goncalo-dealmeida-gym-tracking.netlify.app/"
+      demoLink: "https://goncalo-dealmeida-gym-tracking.netlify.app/",
+      githubLink: "https://github.com/goncalodealmeidadev-pixel/my-portfolio/tree/main/projects/gym-tracker"
     },
     {
       name: "Gym Landing Page",
       description: "Modern, responsive landing page for gyms and fitness centers to attract new members.",
       techStack: ["React", "CSS", "Responsive Design"],
-      demoLink: "https://goncalo-dealmeida-gym-landing.netlify.app"
+      demoLink: "https://goncalo-dealmeida-gym-landing.netlify.app",
+      githubLink: "https://github.com/goncalodealmeidadev-pixel/my-portfolio/tree/main/projects/gym-landing"
     },
     {
       name: "Weather App",
       description: "Real-time weather information with forecasts and location-based weather updates.",
       techStack: ["React", "API", "Geolocation"],
-      demoLink: "https://goncalo-dealmeida-weather-app.netlify.app"
+      demoLink: "https://goncalo-dealmeida-weather-app.netlify.app",
+      githubLink: "https://github.com/goncalodealmeidadev-pixel/my-portfolio/tree/main/projects/weather-app"
     }
   ]
 
@@ -113,11 +116,18 @@ function App() {
                   <span key={techIndex} className="tech-tag">{tech}</span>
                 ))}
               </div>
-              {project.demoLink && (
-                <a href={project.demoLink} className="demo-link" target="_blank" rel="noopener noreferrer">
-                  View Demo →
-                </a>
-              )}
+              <div className="project-links">
+                {project.demoLink && (
+                  <a href={project.demoLink} className="demo-link" target="_blank" rel="noopener noreferrer">
+                    View Demo →
+                  </a>
+                )}
+                {project.githubLink && (
+                  <a href={project.githubLink} className="github-link" target="_blank" rel="noopener noreferrer">
+                    GitHub ↗
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>
