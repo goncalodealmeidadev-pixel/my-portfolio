@@ -46,8 +46,8 @@ function App() {
             with a focus on React, TypeScript, and clean code practices.
           </p>
           <div className="cta-buttons">
-            <a href="#projects" className="cta-primary">View My Work</a>
-            <a href="#contact" className="cta-secondary">Hire Me</a>
+            <a href="#services" className="cta-primary">View Services</a>
+            <a href="#projects" className="cta-secondary">View My Work</a>
           </div>
         </div>
       </section>
@@ -99,6 +99,66 @@ function App() {
                 <li>Vite</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="services">
+        <div className="services-content">
+          <h2>Services & Pricing</h2>
+          <p className="services-intro">
+            I create simple, effective web solutions that make your business more visible and engaging.
+            Below is an overview of what I can offer — and to make it easy, I can start with a free sample
+            so you can see it live before deciding.
+          </p>
+
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="service-icon">🌐</div>
+              <h3>Website</h3>
+              <p className="service-description">1–3 pages, responsive, portfolio-quality design</p>
+              <div className="service-price">500–1,000 CHF</div>
+              <ul className="service-features">
+                <li>Modern, responsive design</li>
+                <li>Mobile-friendly</li>
+                <li>SEO optimized</li>
+                <li>Contact forms</li>
+              </ul>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">⚡</div>
+              <h3>Small App / Feature</h3>
+              <p className="service-description">Custom tool or widget (booking, contact forms, calculators)</p>
+              <div className="service-price">300–800 CHF</div>
+              <ul className="service-features">
+                <li>Custom functionality</li>
+                <li>Database integration</li>
+                <li>User-friendly interface</li>
+                <li>Secure & reliable</li>
+              </ul>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">🔧</div>
+              <h3>Maintenance</h3>
+              <p className="service-description">Monthly updates, security, backups, minor tweaks</p>
+              <div className="service-price">50 CHF / month</div>
+              <ul className="service-features">
+                <li>Regular updates</li>
+                <li>Security patches</li>
+                <li>Content updates</li>
+                <li>Technical support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="services-cta">
+            <h3>Ready to get started?</h3>
+            <p>I can create a free sample page or feature for your business so you can see how it could look.
+               If it resonates, we can discuss expanding it — if not, there's no obligation.</p>
+            <a href="#contact" className="cta-primary">Get Your Free Sample</a>
           </div>
         </div>
       </section>
