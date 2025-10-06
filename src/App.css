@@ -17,7 +17,11 @@ body {
 }
 
 /* Remove default link styling */
-a {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -25,6 +29,17 @@ a {
 a:focus {
   outline: 2px solid #1a1a1a;
   outline-offset: 2px;
+}
+
+/* Ensure buttons never show blue */
+button,
+button:hover,
+button:active,
+button:focus {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
 }
 
 .app {
@@ -100,31 +115,37 @@ a:focus {
   padding: 1rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
-  text-decoration: none;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-.cta-primary {
+.cta-primary,
+.cta-primary:link,
+.cta-primary:visited {
   background: #1a1a1a;
-  color: white;
+  color: white !important;
 }
 
-.cta-primary:hover {
-  background: #333;
+.cta-primary:hover,
+.cta-primary:active {
+  background: #333 !important;
+  color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.cta-secondary {
+.cta-secondary,
+.cta-secondary:link,
+.cta-secondary:visited {
   background: transparent;
-  color: #1a1a1a;
+  color: #1a1a1a !important;
   border: 2px solid #1a1a1a;
 }
 
-.cta-secondary:hover {
-  background: #1a1a1a;
-  color: white;
+.cta-secondary:hover,
+.cta-secondary:active {
+  background: #1a1a1a !important;
+  color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -265,18 +286,22 @@ a:focus {
   background: #e0e0e0;
 }
 
-.demo-link {
+.demo-link,
+.demo-link:link,
+.demo-link:visited {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background: #1a1a1a;
-  color: white;
+  color: white !important;
   border-radius: 8px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
-.demo-link:hover {
-  background: #333;
+.demo-link:hover,
+.demo-link:active {
+  background: #333 !important;
+  color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -375,7 +400,6 @@ a:focus {
 
 .contact-cta-button {
   padding: 0.9rem 1.8rem;
-  border: none;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
@@ -385,26 +409,34 @@ a:focus {
   font-family: inherit;
 }
 
-.contact-cta-button.primary {
+.contact-cta-button.primary,
+.contact-cta-button.primary:link,
+.contact-cta-button.primary:visited {
   background: #1a1a1a;
-  color: white;
+  color: white !important;
+  border: none;
 }
 
-.contact-cta-button.primary:hover {
-  background: #333;
+.contact-cta-button.primary:hover,
+.contact-cta-button.primary:active {
+  background: #333 !important;
+  color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.contact-cta-button.secondary {
+.contact-cta-button.secondary,
+.contact-cta-button.secondary:link,
+.contact-cta-button.secondary:visited {
   background: transparent;
-  color: #1a1a1a;
+  color: #1a1a1a !important;
   border: 2px solid #1a1a1a;
 }
 
-.contact-cta-button.secondary:hover {
-  background: #1a1a1a;
-  color: white;
+.contact-cta-button.secondary:hover,
+.contact-cta-button.secondary:active {
+  background: #1a1a1a !important;
+  color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
