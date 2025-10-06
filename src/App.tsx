@@ -37,7 +37,7 @@ function App() {
         <div className="header-content">
           <h1>Gonçalo De Almeida</h1>
           <p className="subtitle">Software Developer Apprentice | 17 years old</p>
-          <p className="tagline">I build fast, responsive web apps with React & TypeScript</p>
+          <p className="tagline">I build full-stack web applications with Java, Spring Boot, React, and Docker</p>
           <p className="description">
             Building modern web applications and digital experiences. Currently learning full-stack development
             with a focus on React, TypeScript, and clean code practices.
@@ -123,7 +123,13 @@ function App() {
       <section id="contact" className="contact">
         <div className="contact-content">
           <div className="profile-image">
-            <img src="/Goncalo_De_Almeida_klein-2409919922.jpg" alt="Gonçalo De Almeida" />
+            <img
+              src="/Goncalo_De_Almeida_klein-2409919922.jpg"
+              alt="Gonçalo De Almeida"
+              loading="lazy"
+              width="250"
+              height="250"
+            />
           </div>
           <div className="contact-text">
             <h2>Let's Work Together</h2>
