@@ -413,26 +413,45 @@ body {
 .final-cta p {
   font-size: 1.1rem;
   color: #666;
-  margin-bottom: 2rem;
   line-height: 1.6;
 }
 
-.final-cta-button {
-  display: inline-block;
-  padding: 1.1rem 2.5rem;
+/* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
   background: #1a1a1a;
   color: white;
-  text-decoration: none;
+  padding: 1rem 1.5rem;
   border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  font-weight: 500;
+  animation: slideIn 0.3s ease, slideOut 0.3s ease 2.7s;
+  z-index: 1000;
 }
 
-.final-cta-button:hover {
-  background: #333;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(400px);
+    opacity: 0;
+  }
 }
 
 /* Responsive */

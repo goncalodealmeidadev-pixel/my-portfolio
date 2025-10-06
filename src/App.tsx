@@ -1,6 +1,14 @@
 import './App.css'
+import { useState } from 'react'
 
 function App() {
+  const [showToast, setShowToast] = useState(false)
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText('goncalo.dealmeida.dev@gmail.com')
+    setShowToast(true)
+    setTimeout(() => setShowToast(false), 3000)
+  }
   const projects = [
     {
       name: "Gym/Workout Tracking App",
@@ -136,10 +144,7 @@ function App() {
             <div className="contact-buttons">
               <button
                 className="contact-cta-button primary"
-                onClick={() => {
-                  navigator.clipboard.writeText('goncalo.dealmeida.dev@gmail.com');
-                  alert('Email copied to clipboard!');
-                }}
+                onClick={copyEmail}
               >
                 Copy Email
               </button>
@@ -151,11 +156,15 @@ function App() {
         </div>
         <div className="final-cta">
           <h3>Let's build something together</h3>
-          <p>Ready to start your next project? Get in touch and let's make it happen.</p>
-          <a href="mailto:goncalo.dealmeida.dev@gmail.com" className="final-cta-button">
-            Start a Conversation
-          </a>
+          <p>Ready to start your next project? I'm available for freelance work and always excited to collaborate on interesting projects.</p>
         </div>
+
+        {/* Toast Notification */}
+        {showToast && (
+          <div className="toast">
+            ✓ Email copied to clipboard!
+          </div>
+        )}
       </section>
     </div>
   )
