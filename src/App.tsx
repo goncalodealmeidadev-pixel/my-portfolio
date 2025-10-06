@@ -54,15 +54,19 @@ function App() {
         <div className="about-me-content">
           <h2>About Me</h2>
           <p>
-            I'm a passionate full-stack developer currently in an apprenticeship as a software developer at <strong>Zühlke Engineering AG</strong>,
-            where I'm gaining hands-on experience building complete web applications from front to back.
-            I work confidently with JavaScript, TypeScript, React, HTML, and CSS on the frontend, and Java, Spring Boot,
-            and Spring Security on the backend.
+            Hi! I'm Gonçalo, a 17-year-old full-stack developer with a passion for building secure, scalable web applications.
+            I'm currently an apprentice software developer at <strong>Zühlke Engineering AG</strong>, where I get to work on
+            real-world projects that challenge me to grow every day.
           </p>
           <p>
-            I also have hands-on experience working with PostgreSQL databases, Docker for containerized deployments,
-            and understand key concepts in secure backend development. I love designing clean, scalable architectures
-            and delivering projects that are both performant and reliable.
+            I love the entire development process—from designing clean frontend experiences with React and TypeScript,
+            to building robust backend systems with Java and Spring Boot. Whether it's crafting an intuitive user interface
+            or architecting a secure REST API, I'm all about writing code that's not just functional, but maintainable and elegant.
+          </p>
+          <p>
+            When I'm not coding, you'll probably find me exploring new technologies, contributing to open-source projects,
+            or working on side projects that push my skills further. I'm always eager to learn, collaborate, and take on
+            new challenges that help me become a better developer.
           </p>
           <div className="skills-grid">
             <div className="skill-category">
