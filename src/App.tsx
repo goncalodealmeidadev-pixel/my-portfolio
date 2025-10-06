@@ -46,7 +46,8 @@ function App() {
         <div className="about-me-content">
           <h2>About Me</h2>
           <p>
-            I'm a passionate full-stack developer with experience building complete web applications from front to back.
+            I'm a passionate full-stack developer currently in an apprenticeship as a software developer at <strong>Zühlke Engineering AG</strong>,
+            where I'm gaining hands-on experience building complete web applications from front to back.
             I work confidently with JavaScript, TypeScript, React, HTML, and CSS on the frontend, and Java, Spring Boot,
             and Spring Security on the backend.
           </p>
